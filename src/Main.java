@@ -197,14 +197,14 @@ public class Main {
         }
     }
 
-    static void Return(String itemName, Integer qty, Double price){
-    /* return a qty of an item at a specific price */
-        if(inventory.containsKey(itemName)){
+    static void Return(String itemName, Integer qty, Double price) {
+        /* return a qty of an item at a specific price */
+        if (inventory.containsKey(itemName)) {
             Item returnItem = inventory.get(itemName);
             boolean priceFound = false;
 
             //check that the price has been used before
-            for(SalesRecord item : salesRecord){
+            for (SalesRecord item : salesRecord) {
 
                 if (item.itemName.equals(itemName) && item.price.equals(price)) {
                     priceFound = true;
@@ -212,16 +212,17 @@ public class Main {
                 }
             }
 
-            if(priceFound) {
-                if(returnItem.qty > qty) {
+            if (priceFound) {
+                if (returnItem.qty > qty) {
                     profit -= qty * (price - returnItem.price);
-                } else {
-                    profitString = "NA";
                 }
+            } else {
+                profitString = "NA";
             }
         } else {
             System.out.println("Error: " + itemName + " doesn't exist and cannot be returned!");
-    }}
+        }
+    }
     static void Profit(){
     /* Print out the total profit/loss*/
         if (profitString.equals("NA")){

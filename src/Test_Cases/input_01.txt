@@ -1,4 +1,12 @@
-ADD apple 50 2.0
-SELL apple 20 3.0
-RETURN apple 10 2.5
+ADD apple 100 2.00
+SELL apple 20 3.50
+ADD banana 50 1.50
+SELL banana 10 2.50
+SELL apple 30 4.00
+SELL banana 20 3.00
+SELL apple 10 5.00
+SELL banana 5 2.50
+ADD apple 50 1.80
+SELL apple 40 2.50
+CHECK
 PROFIT
