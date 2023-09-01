@@ -1,0 +1,9 @@
+ADD grape 80 2.50
+SELL grape 30 4.00
+ADD mango 60 3.50
+SELL mango 20 5.00
+DONATE grape 10
+WRITEOFF mango 15
+SELL grape 20 3.50
+CHECK
+PROFIT

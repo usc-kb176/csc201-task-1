@@ -1,0 +1,4 @@
+ADD apple 50 2.0
+SELL apple 20 3.0
+RETURN apple 10 2.5
+PROFIT
