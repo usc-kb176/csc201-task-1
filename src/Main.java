@@ -2,12 +2,12 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    static String[] files = {   "./Code/src/Test_Cases/input_01.txt",
-                                "./Code/src/Test_Cases/input_02.txt",
-                                "./Code/src/Test_Cases/input_03.txt",
-                                "./Code/src/Test_Cases/input_04.txt",
-                                "./Code/src/Test_Cases/input_05.txt",
-                                "./Code/src/Test_Cases/input_06.txt"};
+    static String[] files = {   "./src/Test_Cases/input_01.txt",
+                                "./src/Test_Cases/input_02.txt",
+                                "./src/Test_Cases/input_03.txt",
+                                "./src/Test_Cases/input_04.txt",
+                                "./src/Test_Cases/input_05.txt",
+                                "./src/Test_Cases/input_06.txt"};
     static HashMap<String, Item> inventory = new HashMap<>();
     static ArrayList<String> itemsInInventory = new ArrayList<>();
     static ArrayList<SalesRecord> salesRecord = new ArrayList<>();
